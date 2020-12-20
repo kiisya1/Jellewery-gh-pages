@@ -63,6 +63,7 @@
         </a>
 
         <a class="header__cart header__cart--svg" href="#">
+          <span class="visually-hidden">Cart</span>
           <svg class="header__cart-svg" width="20" height="18">
             <use xlink:href="#icon-cart"></use>
           </svg>
@@ -76,7 +77,7 @@
                   <use xlink:href="#icon-magnifier"></use>
                 </svg>
                 <span class="visually-hidden">Search</span>
-                <input type="text" name="search" placeholder="Type here to search" required="">
+                <input type="search" name="search" placeholder="Type here to search" required="">
               </label>
             </div>
           </form>
@@ -232,19 +233,12 @@
 
                     <div class="filter__scale">
                       <div class="filter__bar"></div>
-                      <button type="button" aria-label="Min price"></button>
-                      <button type="button" aria-label="Max price"></button>
-                    </div>
-
-                    <div class="filter__controls">
-                      <label>
-                        <span>$</span>
-                        <input type="number" name="min-price" value="55" min="0" max="300" aria-label="Min price">
-                      </label>
-                      <label>
-                        <span>$</span>
-                        <input type="number" name="max-price" value="155" min="0" max="300" aria-label="Max price">
-                      </label>
+                      <button type="button" aria-label="Min price">
+                        <span>$ 55</span>
+                      </button>
+                      <button type="button" aria-label="Max price">
+                        <span>$ 155</span>
+                      </button>
                     </div>
                   </div>
                 </li>
@@ -426,9 +420,8 @@
         </section>
 
         <section class="pagination">
-          <button class="pagination__button pagination__button--prev" type="button">
-            <span>Previous</span>
-          </button>
+
+          <a class="pagination__link pagination__link--prev" href="#">Previous</a>
           <ul class="pagination__list">
             <li class="pagination__item">
               <a class="pagination__link pagination__link--active">1</a>
@@ -446,9 +439,7 @@
               <a class="pagination__link" href="#">5</a>
             </li>
           </ul>
-          <button class="pagination__button pagination__button--next" type="button">
-            <span>Next</span>
-          </button>
+          <a class="pagination__link pagination__link--next" href="#">Next</a>
 
         </section>
 

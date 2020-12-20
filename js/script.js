@@ -2,8 +2,8 @@
 
 (function () {
 
-  var ActiveTabClass = 'product-card__description-item--active';
-  var ActiveTabLinkClass = 'product-card__tabs-link--active';
+  var activeTabClass = 'product-card__description-item--active';
+  var activeTabLinkClass = 'product-card__tabs-link--active';
 
   var createFocusTrap = window.createFocusTrap;
 
@@ -316,13 +316,13 @@
 
     var tab = tabsList.querySelector(href);
     var link = tabLinkList.querySelector(linkSelector);
-    var activeTab = tabsList.querySelector('.' + ActiveTabClass);
-    var activeTabLink = document.querySelector('.' + ActiveTabLinkClass);
+    var activeTab = tabsList.querySelector('.' + activeTabClass);
+    var activeTabLink = document.querySelector('.' + activeTabLinkClass);
 
-    activeTab.classList.remove(ActiveTabClass);
-    tab.classList.add(ActiveTabClass);
-    activeTabLink.classList.remove(ActiveTabLinkClass);
-    link.classList.add(ActiveTabLinkClass);
+    activeTab.classList.remove(activeTabClass);
+    tab.classList.add(activeTabClass);
+    activeTabLink.classList.remove(activeTabLinkClass);
+    link.classList.add(activeTabLinkClass);
   };
 
   // Функция добавления обработчика собития на ссылку
