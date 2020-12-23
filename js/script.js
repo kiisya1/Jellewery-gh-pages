@@ -399,8 +399,10 @@
       var modalCloseButton = modal.querySelector('.modal__close');
       modalCloseButton.addEventListener('click', closeFunction);
 
-      blockPage();
-      focusTrap.activate();
+      if (!header.classList.contains('header--closed')) {
+        blockPage();
+        focusTrap.activate();
+      }
     }
   };
 
@@ -411,8 +413,10 @@
       modal.classList.add('modal--closed');
       var modalCloseButton = modal.querySelector('.modal__close');
       modalCloseButton.removeEventListener('click', closeFunction);
-      unblockPage();
-      focusTrap.deactivate();
+      if (header.classList.contains('header--closed')) {
+        unblockPage();
+        focusTrap.deactivate();
+      }
     }
   };
 

@@ -1626,6 +1626,7 @@ button.swiper-pagination-bullet {
   line-height: 21px;
   background-color: #000000;
   border: none;
+  border-radius: 0;
   border-bottom: 1px solid #ffffff; }
   .signup__input-field input::-webkit-input-placeholder {
     color: #9b9997; }
@@ -2959,12 +2960,7 @@ button.swiper-pagination-bullet {
 
 .filter__checkbox-item label {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  display: inline-block;
   padding-top: 0;
   padding-left: 25px;
   padding-bottom: 0;
@@ -4169,6 +4165,8 @@ button.swiper-pagination-bullet {
   background-color: rgba(29, 22, 19, 0.25); }
   .modal--closed {
     display: none; }
+  .modal--white {
+    background-color: #ffffff; }
 
 .modal__body {
   position: relative;
